@@ -59,7 +59,7 @@ function HeaderTitle() {
               'dark:text-slate-300'
             )}
           >
-            Full stack software engineer (web and mobile).
+            full-stack software engineer (web and mobile).
           </strong>
           <p>
             having strong(6+ years) expertise in apps development.I am very
