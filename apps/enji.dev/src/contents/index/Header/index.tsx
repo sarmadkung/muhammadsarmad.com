@@ -9,13 +9,10 @@ function Header() {
   return (
     <header
       id="page-header"
-      className={clsx(
-        'background-grid background-grid--fade-out pt-36 pb-20',
-        'lg:pb-28 lg:pt-52'
-      )}
+      className={clsx('background-grid background-grid--fade-out pb-20 pt-32')}
     >
-      <div className={clsx('content-wrapper')}>
-        <div className={clsx('relative')}>
+      <div className={clsx('content-wrapper p-0')}>
+        <div className={clsx('relativ')}>
           <div className={clsx('relative z-10')}>
             <HeaderTitle />
           </div>
@@ -25,14 +22,14 @@ function Header() {
           <div className={clsx('mt-20 lg:mt-36')}>
             <HeaderTechStack />
           </div>
-          <div
+          {/* <div
             className={clsx(
-              'pointer-events-none absolute -top-36 right-0 z-0 hidden select-none',
+              'pointer-events-none -top-36 right-0 z-0 hidden select-none',
               'lg:block'
             )}
           >
             <HeaderImage />
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
