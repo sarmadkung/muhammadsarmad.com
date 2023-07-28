@@ -10,7 +10,7 @@
 
 A monorepo for my personal website and projects, built with Turborepo and pnpm.
 
-## 📘 [ms.dev](https://www.muhammadsarmad.com)
+## 📘 [muhammadsarmad.com](https://www.muhammadsarmad.com)
 
 A personal website with a blog, project showcase, and work information.
 
