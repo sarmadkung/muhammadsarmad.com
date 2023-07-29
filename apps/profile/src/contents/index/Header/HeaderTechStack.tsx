@@ -19,57 +19,53 @@ const animation = {
   },
 };
 
-const colors = [
-  'text-teal-500',
-  'text-green-500',
-  'text-teal-700',
-  'text-indigo-300',
-  'text-green-500',
-  'text-indigo-500',
-  'text-green-800',
-  'text-indigo-300',
-];
+type Tech = {
+  title: string;
+  exp: string;
+};
 
-const techs = [
-  'ReactJs',
-  'React Native',
-  'Nodejs',
-  'RestApi',
-  'Graphql',
-  'Rust',
-];
-
-function HeaderTechStack() {
+function HeaderTechStack({
+  color,
+  techs,
+  title,
+}: {
+  color: string;
+  techs: Tech[];
+  title: string;
+}) {
   return (
     <div>
-      <m.strong
-        className={clsx('text-xl text-green-600')}
+      <m.h1
+        className={clsx('text-title')}
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.6 }}
       >
-        Current favorite tech stack/tools:
-      </m.strong>
+        {title}
+      </m.h1>
       <m.ul
         className={clsx(
-          'mt-5 flex items-center gap-3.5 text-slate-500',
-          'dark:text-slate-500'
+          'mt-5 flex items-center gap-3.5',
+          'text-slate-700',
+          'dark:text-slate-300'
         )}
         initial="hide"
         animate="show"
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
       >
-        {techs.map((tech, index) => (
+        {techs.map((tech) => (
           <>
             <m.li variants={animation}>
-              <strong
+              <m.div
                 className={clsx(
-                  'dark:border-divider-dark light:border-divider-light relative z-10 flex-1 rounded-full border bg-transparent px-4 py-1',
-                  colors[index]
+                  'dark:border-divider-dark light:border-divider-light flex flex-row items-center rounded-full border bg-transparent px-4 py-1'
                 )}
               >
-                {tech}
-              </strong>
+                <m.h2 className={clsx(color)}>{tech.title}</m.h2>
+                <m.div className="ml-2 text-xs text-slate-500">
+                  ( {tech.exp} yrs )
+                </m.div>
+              </m.div>
             </m.li>
             <m.li variants={animation}>
               <div

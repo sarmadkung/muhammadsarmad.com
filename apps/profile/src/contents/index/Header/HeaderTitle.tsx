@@ -43,37 +43,34 @@ function HeaderTitle() {
           </strong>{' '}
           Sarmad,{' '}
         </m.span>
-        <m.h1
-          className={clsx(
-            'block text-base text-slate-600',
-            'dark:text-slate-400'
-          )}
-          initial={animation.hide}
-          animate={animation.show}
-          transition={{ delay: 0.3 }}
-        >
-          <span>A</span>{' '}
-          <strong
-            className={clsx(
-              'font-bold lowercase text-slate-700',
-              'dark:text-slate-300'
-            )}
-          >
-            full-stack software engineer (web and mobile).
-          </strong>
-          <p>
-            having strong(6+ years) expertise in apps development.I am very
-            strong in solving complex problems using the above techs and is
-            focused on learning new techs and the best future software
-            development approaches.
-          </p>
-          <p>
-            Higher education(M.phil) includes Machine Learning, Deep Learning,
-            Mathematical problem solutions, and data science
-          </p>
-          <span className={clsx('block')}>clean and modern UI design.</span>
-        </m.h1>
       </span>
+      <m.div
+        initial={animation.hide}
+        animate={animation.show}
+        transition={{ delay: 0.6 }}
+        className={clsx('text-slate-700', 'dark:text-slate-300')}
+      >
+        <span>A</span>{' '}
+        <strong className={clsx('font-bold lowercase text-blue-500')}>
+          full-stack software engineer (web and mobile).
+        </strong>
+        <p
+          className="mt-2 text-slate-500 
+        "
+        >
+          having strong(6+ years) expertise in apps development.I am very strong
+          in solving complex problems using the above techs and is focused on
+          learning new techs and the best future software development
+          approaches.
+        </p>
+        <div className="mt-2">
+          <span className=" text-slate-500">
+            Higher education ( M.phil ) includes Machine Learning, Deep
+            Learning, Mathematical problem solutions, and data science clean and
+            modern UI design
+          </span>
+        </div>
+      </m.div>
     </div>
   );
 }
