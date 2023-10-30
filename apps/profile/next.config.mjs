@@ -1,7 +1,7 @@
 import bundeAnalyzer from '@next/bundle-analyzer';
 import nextMDX from '@next/mdx';
-// import rehypePlugins from 'rehype-plugins';
-// import remarkPlugins from 'remark-plugins';
+import rehypePlugins from 'rehype-plugins';
+import remarkPlugins from 'remark-plugins';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -28,8 +28,8 @@ const withBundleAnalyzer = bundeAnalyzer({
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
   options: {
-    // remarkPlugins,
-    // rehypePlugins,
+    remarkPlugins,
+    rehypePlugins,
     providerImportSource: '@mdx-js/react',
   },
 });

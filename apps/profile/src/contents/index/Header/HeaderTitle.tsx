@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { m, useAnimationControls } from 'framer-motion';
-import Image from 'next/image';
 
 const animation = {
   hide: { x: -32, opacity: 0 },

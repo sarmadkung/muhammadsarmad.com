@@ -1,16 +1,6 @@
 import clsx from 'clsx';
 import { m } from 'framer-motion';
 
-import {
-  FigmaIcon,
-  FramerMotionIcon,
-  NextJsIcon,
-  ReactIcon,
-  TailwindCssIcon,
-  TypeScriptIcon,
-  VSCodeIcon,
-} from '@/components/Icons';
-
 const animation = {
   hide: { x: -8, opacity: 0 },
   show: {
